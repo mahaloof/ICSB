@@ -6,6 +6,7 @@ import Program_3 from '../../assets/program-3.png'
 import Program_icon_1 from '../../assets/program-icon-1.png'
 import Program_icon_2 from '../../assets/program-icon-2.png'
 import Program_icon_3 from '../../assets/program-icon-3.png'
+import { Link } from "react-router-dom";
 const Program = () => {
   return (
     <div className='programs'>
@@ -13,7 +14,7 @@ const Program = () => {
             <img src={Program_1} alt=""/>
             <div className="caption">
                 <img src={Program_icon_1} alt=''/>
-                <p>EVENTS</p>
+                <Link to="/event"><p>EVENTS</p></Link>
             </div>
         </div>
         <div className='program'>
