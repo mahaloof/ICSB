@@ -1,12 +1,12 @@
 /* Container Styles */
-.events-container {
+.blogs-container {
     min-height: 100vh;
     background-color: #f9fafb;
   }
   
   /* Header Styles */
-  .events-header {
-    background-color: #090df7;
+  .blogs-header {
+    background-color: #1a0af5;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
   
@@ -23,54 +23,55 @@
   }
   
   /* Main Content Styles */
-  .events-main {
+  .blogs-main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
   }
   
   /* Grid Layout */
-  .events-grid {
+  .blogs-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 1rem;
   }
   
   /* Responsive Grid */
   @media (min-width: 768px) {
-    .events-grid {
+    .blogs-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (min-width: 1024px) {
-    .events-grid {
+    .blogs-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-  /* Event Card Styles */
-  .event-card {
+  /* Blog Card Styles */
+  .blog-card {
     background-color: #ffffff;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  .event-card:hover {
+  .blog-card:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
   }
   
-  /* Event Image Styles */
-  .event-image-container {
+  /* Blog Image Styles */
+  .blog-image-container {
     position: relative;
     width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
   }
   
-  .event-image {
+  .blog-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,36 +80,51 @@
     object-fit: cover;
   }
   
-  /* Event Content Styles */
-  .event-content {
+  /* Blog Content Styles */
+  .blog-content {
     padding: 1.5rem;
   }
   
-  .event-title {
+  .blog-title {
     font-size: 1.25rem;
     font-weight: 600;
     color: #111827;
     margin-bottom: 0.5rem;
   }
   
-  .event-date {
+  .blog-meta {
     font-size: 0.875rem;
     color: #6b7280;
+    margin-bottom: 0.75rem;
   }
   
-  /* Hover Effects */
-  .event-card:hover .event-image {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
+  .blog-author {
+    font-weight: 500;
   }
   
-  /* Additional Utility Classes */
-  .text-center {
-    text-align: center;
+  .blog-date {
+    margin-left: 0.5rem;
   }
   
-  .mb-4 {
+  .blog-excerpt {
+    font-size: 0.9375rem;
+    color: #4b5563;
     margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    color: #2563eb;
+    text-decoration: underline;
   }
   
   /* Animation */
@@ -123,7 +139,7 @@
     }
   }
   
-  .event-card {
+  .blog-card {
     animation: fadeIn 0.3s ease-out;
   }
   
