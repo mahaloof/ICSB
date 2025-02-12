@@ -2,24 +2,26 @@
     margin: 80px auto;
     width: 90%;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the items */
     gap: 20px; /* Adds spacing between items */
 }
 
 .program {
-    flex-basis: 31%;
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with spacing */
+    max-width: calc(33.33% - 20px);
     position: relative;
 }
 
-/* Ensures images fit properly */
+/* Ensure images fit properly */
 .program img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
+/* Caption overlay */
 .caption {
     border-radius: 10px;
     position: absolute;
@@ -50,22 +52,16 @@
 }
 
 /* 📱 Mobile Responsive Fix */
-@media (max-width: 768px) {
-    .programs {
-        flex-direction: column;
-        align-items: center; /* Center items */
-        gap: 15px; /* Add spacing */
-    }
-    
+@media (max-width: 1024px) {
     .program {
-        width: 80%; /* Reduce width for better layout */
-        flex-basis: auto; /* Let it adjust naturally */
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+        max-width: calc(50% - 20px);
     }
 }
 
-/* 🖥️ Small Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .program {
-        flex-basis: 48%; /* Two items per row */
+        flex: 1 1 100%; /* One item per row on mobile */
+        max-width: 90%; /* Slight padding */
     }
 }
