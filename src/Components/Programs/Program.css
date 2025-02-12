@@ -1,29 +1,35 @@
-.programs{
+.programs {
     margin: 80px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Adds spacing between items */
 }
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+}
+
+/* Ensures images fit properly */
 .program img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
-.program{
-    flex-basis: 31%;
-    position: relative;
-}
-.caption{
+
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,15,152,0.3);
+    background: rgba(0, 15, 152, 0.3);
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     color: aliceblue;
@@ -32,24 +38,34 @@
     padding-top: 70%;
     transition: 0.4s;
 }
-.caption img{
+
+.caption img {
     width: 60px;
     margin-bottom: 10px;
 }
-.program:hover .caption{
+
+.program:hover .caption {
     opacity: 1;
     padding-top: 0;
 }
 
-
-/* media query */
-
-@media (max-width :650px){
-    .programs{
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .programs {
         flex-direction: column;
+        align-items: center; /* Center items */
+        gap: 15px; /* Add spacing */
     }
-    .program{
-        flex-basis: 100%;
-        margin: 20px;
+    
+    .program {
+        width: 80%; /* Reduce width for better layout */
+        flex-basis: auto; /* Let it adjust naturally */
+    }
+}
+
+/* 🖥️ Small Tablets */
+@media (max-width: 1024px) {
+    .program {
+        flex-basis: 48%; /* Two items per row */
     }
 }
