@@ -21,14 +21,14 @@ const Program = () => {
             <img src={Program_2} alt=""/>
             <div className="caption">
                 <img src={Program_icon_2} alt=''/>
-                <p>BLOG</p>
+                <Link to="/blog"><p>BLOG</p></Link>
             </div>
         </div>
         <div className='program'>
             <img src={Program_3} alt=""/>
             <div className="caption">
                 <img src={Program_icon_3} alt=''/>
-                <p>TEAMS</p>
+                <Link to="/team"><p>TEAMS</p></Link>
             </div>
         </div>
     </div>
