@@ -7,7 +7,7 @@ const events = [
     startDate: "11-07-2024",
     endDate: "12-07-2024",
     imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20125436-GyVJcgyOH5TEVDvvHkTUgOmVl4yN8b.png",
+      "",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const events = [
     startDate: "11-07-2024",
     endDate: "12-07-2024",
     imageUrl:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-12%20125436-GyVJcgyOH5TEVDvvHkTUgOmVl4yN8b.png",
+      "",
   },
 ]
 
