@@ -11,6 +11,7 @@ const images = [
   picture,
   picture,
   picture,
+  "/mahaloof/test1.png",
 ];
 
 const Gallary = () => {
