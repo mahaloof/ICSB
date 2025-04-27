@@ -5,12 +5,14 @@ import dark_arrow from '../../assets/dark-arrow.png'
 const Home = () => {
   return (
     <div className='hero Container' id='Home'>
-    <div className="home-text">
-        <h1>P.A COLLAGE OF ENGINEERING</h1>
-        <center><h2>ICSB</h2></center>
+      <div className="home-text">
+        <h1>P.A COLLEGE OF ENGINEERING</h1>
+        <center><h2>CSE (ICSB)</h2></center>
         <p>IOT|CYBER SECURITY|BLOCK CHAIN</p>
-        <button className='btn'>Know More<img src={dark_arrow} alt="" /></button>
-    </div>
+        {/* <a href='https://www.pace.edu.in/' target='_blank' rel="noopener noreferrer">
+          <button className='btn'>Know More<img src={dark_arrow} alt="" /></button> 
+        </a> */}
+      </div>
     </div>
   )
 }

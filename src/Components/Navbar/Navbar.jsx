@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/kamillogo.png'
 import{Link} from 'react-scroll'
@@ -25,14 +25,14 @@ const Navbar = () => {
         <ul className={mobileMenu ? '' : 'mobile-menu'}>
             <li><Link to='Home' smooth={true} offset={0} duration={500}>
               Home</Link></li>
-            <li><Link to='programs' smooth={true} offset={-260} duration={500}>
-              Programs</Link></li>
-            <li><Link to='about' smooth={true} offset={-150} duration={500}>
+            <li><Link to='about' smooth={true} offset={-260} duration={500}>
               About Us</Link></li>
+            <li><Link to='programs' smooth={true} offset={-150} duration={500}>
+              Hightlights</Link></li>
+            <li><Link to='campus' smooth={true} offset={-260} duration={500}>
+            Gallery</Link></li>
             <li><Link to='messages' smooth={true} offset={-260} duration={500}>
               Message</Link></li>
-            <li><Link to='campus' smooth={true} offset={-260} duration={500}>
-              Gallery</Link></li>
             <li><Link to='contact' smooth={true} offset={-260} duration={500} 
             className='btn'>Contact Us</Link></li>
         </ul>

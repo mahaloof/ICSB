@@ -36,8 +36,8 @@ const Messages = () => {
               <div className="user-info">
                 <img src={icon_1} alt="" />
                 <div>
-                  <h3>Mohammed fayaz</h3>
-                  <span>1st class Teachers</span>
+                  <h3>DR. SHAMNA N.V</h3>
+                  <span>Heaf of the Department</span>
                 </div>
               </div>
               <p>In antiquity, a paragraph often was a single thought—and often a single sentence,
@@ -50,8 +50,8 @@ const Messages = () => {
               <div className="user-info">
                 <img src={icon_2} alt="" />
                 <div>
-                  <h3>Mohammed fayaz 2</h3>
-                  <span>1st class Teachers</span>
+                  <h3>PROF. AFEEFA NAZNEEN N.Z</h3>
+                  <span>Faculty</span>
                 </div>
               </div>
               <p>In antiquity, a paragraph often was a single thought—and often a single sentence,
@@ -65,8 +65,8 @@ const Messages = () => {
               <div className="user-info">
                 <img src={icon_3} alt="" />
                 <div>
-                  <h3>Mohammed fayaz 3</h3>
-                  <span>1st class Teachers</span>
+                  <h3>PROF.AYSHA THOFA</h3>
+                  <span>Faculty</span>
                 </div>
               </div>
               <p>In antiquity, a paragraph often was a single thought—and often a single 
@@ -80,8 +80,8 @@ const Messages = () => {
               <div className="user-info">
                 <img src={icon_1} alt="" />
                 <div>
-                  <h3>Mohammed fayaz 4</h3>
-                  <span>1st class Teachers</span>
+                  <h3>Ms.MEGHASHREE</h3>
+                  <span>Faculty</span>
                 </div>
               </div>
               <p>In antiquity, a paragraph often was a single thought—and often a single sentence,

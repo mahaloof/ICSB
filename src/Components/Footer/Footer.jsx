@@ -12,8 +12,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-content-left">
               <img src={Logo} alt="" className='logo' />
-              <p>When building a navigation menu, such as a breadcrumb or a set of tabs where you'd like to show which of them is currently selected
-                It provides useful context for assistive technology like screen readers</p>
+              <p></p>
                 <div className="footer-social-icons">
                   <img src={facebook} alt="" />
                   <img src={x} alt="" />
@@ -21,7 +20,7 @@ const Footer = () => {
                 </div>
           </div>
           <div className="footer-content-center">
-            <h2>K.E.M.S</h2>
+            <h2>CSE (ICSB)</h2>
             <ul>
             <li><Link to='Home' smooth={true} offset={0} duration={500}>
               Home</Link></li>
@@ -39,13 +38,13 @@ const Footer = () => {
             <h2>CONTACT US</h2>
             <ul>
               <li>123456789</li>
-              <li>fayazpajju12@fayaz.com</li>
+              <li>cseics@pace.edu.in</li>
             </ul>
           </div>
         </div>
         <hr/>
         <p className="footer-copyright">
-            Copyright 2024 @ KAMIL.COM -All Rights Reserved
+            Copyright 2024 @ CSE(ICSB) -All Rights Reserved
         </p>
     </div>
   )

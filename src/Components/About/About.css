@@ -1,50 +1,324 @@
-.about{
+.about {
     margin: 100px auto;
     display: flex;
+    flex-direction: column; /* Stack sections vertically */
     align-items: center;
-    justify-content:space-between;
     width: 90%;
+    gap: 20px;
 }
-.about-left{
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align image and text to the top */
+    width: 100%;
+    gap: 20px; /* Add spacing between the image and text */
+}
+
+.about-left {
     flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.about-right{
+
+.about-right {
     flex-basis: 56%;
 }
-.about-img{
+
+.about-img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Move the image slightly downward */
 }
-.about h3{
-    font-weight: 600;
-    font-size: 16px;
-    color: rgb(54, 14, 163);
-}
-.about h2{
+
+/* Add spacing for headings */
+.about-right h2 {
     font-size: 35px;
     color: black;
-    margin: 10px 0;
-    max-width: 400px;
-}
-.about p{
-    color: black;
-    margin-bottom: 15px;
+    margin: 20px 0; /* Add vertical spacing */
 }
 
+.about-right h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(54, 14, 163);
+    margin: 15px 0; /* Add vertical spacing */
+}
 
-/* media query */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    width: 100%; /* Ensure cards take full width */
+}
 
+.card {
+    flex: 1;
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-@media (max-width :800px){
-    .about{
-        flex-direction: column;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #1a0af5;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images are cropped proportionally */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add spacing between the image and the text */
+}
+
+/* IoT Section Styles */
+.iot-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iot-image {
+  flex: 1;
+}
+
+.detailed-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iot-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.iot-content h2 {
+  color: #1a0af5;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.iot-content h3 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.iot-content ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.iot-content li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.iot-content li::before {
+  content: "•";
+  color: #1a0af5;
+  position: absolute;
+  left: 0;
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.application-grid div {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Cyber Section Styles */
+.cyber-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cyber-image {
+  flex: 1;
+}
+
+.cyber-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.cyber-content h2 {
+  color: #1a0af5;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.cyber-content h3 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.cyber-content ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.cyber-content li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cyber-content li::before {
+  content: "•";
+  color: #1a0af5;
+  position: absolute;
+  left: 0;
+}
+
+/* Blockchain Section Styles */
+.blockchain-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blockchain-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.blockchain-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.blockchain-content h2 {
+  color: #1a0af5;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.blockchain-content h3 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.blockchain-content ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.blockchain-content li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.blockchain-content li::before {
+  content: "•";
+  color: #1a0af5;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
     }
-    .about-left{
-        flex-basis: 100%;
-        margin: 20px;
-        order: 2;
+
+    .about-left, .about-right {
+        flex-basis: 100%; /* Take full width */
     }
-    .about-right{
-        flex-basis: 100%;
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+  .iot-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .application-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iot-image, .iot-content {
+    flex: 1;
+  }
+
+  .detailed-img {
+    max-width: 100%;
+  }
+
+  .cyber-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cyber-image, .cyber-content {
+    flex: 1;
+  }
+
+  .blockchain-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blockchain-image {
+    order: -1; /* This will place the image above the content on mobile */
+  }
+}
+

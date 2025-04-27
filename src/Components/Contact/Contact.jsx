@@ -13,7 +13,7 @@ const onSubmit = async (event) => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "105701fd-be77-42d4-a8bf-c7b0a226639a");
+    formData.append("access_key", "120fe090-3e51-44cb-ab2c-8519d76ec7b9");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -36,13 +36,11 @@ const onSubmit = async (event) => {
     <div className='contact'>
         <div className="contact-col">
             <h3>Reach Out<br/>and Connect with Us </h3>
-            <p>To reserve the Grand Auditorium for your upcoming event, 
-                simply complete the form provided.One of our executives 
-                will contact you with in 24 hours .</p>
+            <p>The Department of CSE (ICSB) is dedicated to providing excellent education and support to students. For any questions or information about our programs, please reach out to us via the contact form, and we’ll get back to you promptly..</p>
                 <ul>
-                    <li><img src={mail_icon} alt="" />contact@fayazpajju.dev</li>
-                    <li><img src={phone_icon} alt="" />12345678-0</li>
-                    <li><img src={adrs_icon} alt="" />hafagaha-haaa,kerala<br/> Ma 90990,india</li>
+                    <li><img src={mail_icon} alt="" />CSEICSB@PACE.EDU.IN</li>
+                    <li><img src={phone_icon} alt="" />12345678</li>
+                    <li><img src={adrs_icon} alt="" />Nadupadav, Montepadav Post, Mangaluru, Karnataka 574153<br/> Ma 90990,india</li>
                 </ul>
         </div>
         <div className="contact-col">

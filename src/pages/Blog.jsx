@@ -1,67 +1,42 @@
-import "./Blog.css"
-
-const blogs = [
-  {
-    id: 1,
-    title: "Introduction to Web Development",
-    author: "Jane Doe",
-    date: "2025-02-10",
-    excerpt: "Learn the basics of HTML, CSS, and JavaScript to start your web development journey.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 2,
-    title: "The Future of AI in Software Engineering",
-    author: "John Smith",
-    date: "2025-02-08",
-    excerpt:
-      "Explore how artificial intelligence is shaping the future of software development and engineering practices.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 3,
-    title: "Best Practices for Code Review",
-    author: "Alice Johnson",
-    date: "2025-02-05",
-    excerpt: "Discover effective strategies to improve your code review process and boost team productivity.",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-]
+import React, { useState } from 'react';
+import './Blog.css';
 
 function Blog() {
-  return (
-    <div className="blogs-container">
-      <header className="blogs-header">
-        <div className="header-content">
-          <h1>Our Blog</h1>
-        </div>
-      </header>
+  const [showPopup, setShowPopup] = useState(false);
 
-      <main className="blogs-main">
-        <div className="blogs-grid">
-          {blogs.map((blog) => (
-            <div key={blog.id} className="blog-card">
-              <div className="blog-image-container">
-                <img src={blog.imageUrl || "/placeholder.svg"} alt={blog.title} className="blog-image" />
-              </div>
-              <div className="blog-content">
-                <h2 className="blog-title">{blog.title}</h2>
-                <p className="blog-meta">
-                  <span className="blog-author">{blog.author}</span> |
-                  <span className="blog-date">{new Date(blog.date).toLocaleDateString()}</span>
-                </p>
-                <p className="blog-excerpt">{blog.excerpt}</p>
-                <a href={`/blog/${blog.id}`} className="read-more">
-                  Read More
-                </a>
-              </div>
-            </div>
-          ))}
+  const handleSubmit = () => {
+    const emailAddress = 'mahaloofpapt@gmail.com';
+    const subject = 'Article Submission';
+    const body = 'I would like to submit my article...';
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailUrl);
+  };
+
+  return (
+    <div className="blog-page-container">
+      <nav className="navbar">
+        <div className="navbar-logo" style={{ justifyContent: 'flex-start', textAlign: 'left' }}>Blog</div>
+      </nav>
+      <div className="center-content">
+        <button className="submit-button" onClick={() => setShowPopup(true)}>Submit Article</button>
+      </div>
+      {showPopup && (
+        <div className="popup-container">
+          <p className="popup-quote">
+            “Your words have the power to spark minds, inspire hearts, and change the world. Don’t just think it—write it.”
+          </p>
+          <p className="popup-message">
+            Ready to share your unique perspective? Submit your article and let your voice be heard by a community eager for inspiration and new ideas!
+          </p>
+          <button className="popup-submit-button" onClick={handleSubmit}>Submit my Article</button>
+          <button className="popup-close-button" onClick={() => setShowPopup(false)}>Close</button>
         </div>
-      </main>
+      )}
+      {showPopup && (
+        <div className="popup-overlay" onClick={() => setShowPopup(false)} />
+      )}
     </div>
-  )
+  );
 }
 
-export default Blog
-
+export default Blog;
