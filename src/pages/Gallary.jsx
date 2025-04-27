@@ -5,31 +5,31 @@ import "./Gallary.css";
 const categories = [
   {
     title:"UNLOCKING IOT: FROM CONCEPT TO CREATION",
-    images: Array.from({ length: 12 }, (_, i) => `/mahaloof/pics/galleryy/unlock iot/1 (${i + 1}).jpg`),
+    images: Array.from({ length: 12 }, (_, i) => `/ICSB/pics/galleryy/unlock iot/1 (${i + 1}).jpg`),
   },
   {
     title: "JAVA JUMP START",
-    images: Array.from({ length: 21 }, (_, i) => `/mahaloof/pics/galleryy/java jump/image${i}.jpg`),
+    images: Array.from({ length: 21 }, (_, i) => `/ICSB/pics/galleryy/java jump/image${i}.jpg`),
   },
   {
     title: "IMPROVE YOUR COMMUNICATION SKILLS",
-    images: Array.from({ length: 21 }, (_, i) => `/mahaloof/pics/galleryy/voice vision/image_${i}.jpg`),
+    images: Array.from({ length: 21 }, (_, i) => `/ICSB/pics/galleryy/voice vision/image_${i}.jpg`),
   },
   {
     title: "INNOVATIVE IOT",
-    images: Array.from({ length: 70 }, (_, i) => `/mahaloof/pics/galleryy/iot/image${i + 1}.jpg`),
+    images: Array.from({ length: 70 }, (_, i) => `/ICSB/pics/galleryy/iot/image${i + 1}.jpg`),
   },
   {
     title: "A DEEP DIVE INTO OPERATING SYSTEMS AND LINUX",
-    images: Array.from({ length: 12 }, (_, i) => `/mahaloof/pics/galleryy/deep dive/1 (${i}).jpg`),
+    images: Array.from({ length: 12 }, (_, i) => `/ICSB/pics/galleryy/deep dive/1 (${i}).jpg`),
   },
   {
     title: "CYBER SECURITY & REAL WORLD CHALLENGES",
-    images: Array.from({ length: 16 }, (_, i) => `/mahaloof/pics/galleryy/cyber security/image${i + 1}.jpg`),
+    images: Array.from({ length: 16 }, (_, i) => `/ICSB/pics/galleryy/cyber security/image${i + 1}.jpg`),
   },
   {
     title: "3D PRINTING WORKSHOP",
-    images: Array.from({ length: 16 }, (_, i) => `/mahaloof/pics/galleryy/3d printing/image${i + 1}.jpg`),
+    images: Array.from({ length: 16 }, (_, i) => `/ICSB/pics/galleryy/3d printing/image${i + 1}.jpg`),
   },
 ];
 
