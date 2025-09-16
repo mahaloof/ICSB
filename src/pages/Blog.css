@@ -14,7 +14,7 @@ body, html {
 
 /* Header Styles */
 .blogs-header {
-  background-color: #1a0af5;
+  background-color: #212ea0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -234,7 +234,7 @@ body, html {
 
 /* Navbar Styles */
 .navbar {
-  background: #1a0af5;
+  background: #212ea0;
   color: #fff;
   padding: 1rem;
   display: flex;

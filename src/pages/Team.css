@@ -5,9 +5,11 @@
 }
 
 .team {
-  text-align: center;
-  color: #1a237e;
+  text-align: left;      /* Changed to left */
+  color: #0d47a1;      /* Match .team-title color */
   margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;   /* Make it bold */
 }
 
 .team-title {

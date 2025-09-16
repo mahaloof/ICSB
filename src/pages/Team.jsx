@@ -1,6 +1,15 @@
 import React from "react";
 import "./Team.css";
 
+const facultyTeam = [
+  { role: 'Head of the Department', name: 'Dr.Shamna N.V' },
+  { role: 'Assistant Professor', name: 'Prof.afeefa Nazreen N.Z' },
+  { role: 'Assistant Professor', name: 'Prof.thofa Aysha' },
+  { role: 'Assistant Professor', name: 'Ms.Meghashree' },
+  { role: 'Assistant Professor', name: 'Prof.Saeedah' },
+  // Add more faculty as needed
+];
+
 const coreTeam = [
   { role: 'President', name: 'Muhammed Haashid' },
   { role: 'Vice President', name: 'Muhammed Zayan Sameer' },
@@ -36,8 +45,21 @@ const subTeams = [
 const Team = () => {
   return (
     <div className="team-wrapper">
-      <team>Our Team</team>
+      <h1 className="team">Our Team</h1>
 
+      {/* Faculty Section */}
+      <h2 className="team-title">Faculty</h2>
+      <div className="team-section">
+        {facultyTeam.map((member, index) => (
+          <div key={index} className="team-card">
+            <h3>{member.role}</h3>
+            <p>{member.name}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Core Team Section */}
+      <h2 className="team-title">Core Team</h2>
       <div className="team-section">
         {coreTeam.map((member, index) => (
           <div key={index} className="team-card">
@@ -47,6 +69,7 @@ const Team = () => {
         ))}
       </div>
 
+      {/* Sub Teams Section */}
       {subTeams.map((team, idx) => (
         <div key={idx}>
           <h2 className="team-title">{team.team}</h2>

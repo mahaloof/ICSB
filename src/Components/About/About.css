@@ -1,324 +1,278 @@
+/* ==========================
+   Base About Section
+========================== */
 .about {
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center;
-    width: 90%;
-    gap: 20px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
 }
 
+/* ==========================
+   Content Layout
+========================== */
 .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align image and text to the top */
-    width: 100%;
-    gap: 20px; /* Add spacing between the image and text */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
 }
 
 .about-left {
-    flex-basis: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .about-right {
-    flex-basis: 56%;
+  flex-basis: 56%;
 }
 
+/* ==========================
+   Image Styling
+========================== */
 .about-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 60px; /* Move the image slightly downward */
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  transition: transform 0.3s ease;
 }
 
-/* Add spacing for headings */
-.about-right h2 {
-    font-size: 35px;
-    color: black;
-    margin: 20px 0; /* Add vertical spacing */
+.about-img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================
+   Headings
+========================== */
+.about-right h2,
+.why-icsb h2,
+.stats-section h2,
+.funfacts-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1a0af5, #00c4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .about-right h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(54, 14, 163);
-    margin: 15px 0; /* Add vertical spacing */
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin: 18px 0 10px;
+  border-left: 4px solid #1a0af5;
+  padding-left: 10px;
 }
 
+/* ==========================
+   Cards Section (Specializations)
+========================== */
 .cards-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 20px;
-    width: 100%; /* Ensure cards take full width */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .card {
-    flex: 1;
-    background-color: #f9fafb;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
-    font-size: 20px;
-    color: #1a0af5;
-    margin-bottom: 10px;
+  font-size: 22px;
+  margin-top: 10px;
+  color: #1a0af5;
 }
 
 .card p {
-    font-size: 14px;
-    color: #555;
+  font-size: 15px;
+  color: #666;
+  margin-top: 5px;
 }
 
 .card-img {
-    width: 100%;
-    height: 150px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensure the images are cropped proportionally */
-    border-radius: 10px;
-    margin-bottom: 10px; /* Add spacing between the image and the text */
-}
-
-/* IoT Section Styles */
-.iot-section {
-  display: flex;
-  gap: 40px;
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #f8f9fa;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.iot-image {
-  flex: 1;
-}
-
-.detailed-img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
-.iot-content {
-  flex: 1;
-  padding: 20px;
-}
-
-.iot-content h2 {
-  color: #1a0af5;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.iot-content h3 {
-  color: #333;
-  margin: 15px 0;
-  font-size: 20px;
-}
-
-.iot-content ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.iot-content li {
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
-}
-
-.iot-content li::before {
-  content: "•";
-  color: #1a0af5;
-  position: absolute;
-  left: 0;
-}
-
-.application-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 15px;
-}
-
-.application-grid div {
+/* ==========================
+   Why ICSB Section
+========================== */
+.why-icsb {
   text-align: center;
-  padding: 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8faff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Cyber Section Styles */
-.cyber-section {
+.why-grid {
   display: flex;
-  gap: 40px;
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #f8f9fa;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  flex: 1;
+  min-width: 240px;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease;
 }
 
-.cyber-image {
-  flex: 1;
+.why-card:hover {
+  transform: translateY(-6px);
 }
 
-.cyber-content {
-  flex: 1;
-  padding: 20px;
-}
-
-.cyber-content h2 {
+.why-card h3 {
+  margin-top: 15px;
   color: #1a0af5;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.cyber-content h3 {
-  color: #333;
-  margin: 15px 0;
   font-size: 20px;
 }
 
-.cyber-content ul {
-  list-style-type: none;
-  padding-left: 20px;
+.why-icon {
+  font-size: 40px;
+  color: #00c4ff;
 }
 
-.cyber-content li {
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
+/* ==========================
+   Statistics Section
+========================== */
+.stats-section {
+  padding: 50px 20px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
-.cyber-content li::before {
-  content: "•";
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat h3 {
+  font-size: 32px;
+  font-weight: 700;
   color: #1a0af5;
-  position: absolute;
-  left: 0;
 }
 
-/* Blockchain Section Styles */
-.blockchain-section {
+.stat p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ==========================
+   Fun Facts Section
+========================== */
+.funfacts-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e8f0ff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.funfacts-grid {
   display: flex;
-  gap: 40px;
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #f8f9fa;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.funfact {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.blockchain-content {
-  flex: 1;
   padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.blockchain-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
+.funfact:hover {
+  transform: scale(1.05);
 }
 
-.blockchain-content h2 {
+.funfact-icon {
+  font-size: 36px;
   color: #1a0af5;
-  margin-bottom: 20px;
-  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-.blockchain-content h3 {
+.funfact p {
+  font-size: 15px;
   color: #333;
-  margin: 15px 0;
-  font-size: 20px;
 }
 
-.blockchain-content ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.blockchain-content li {
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
-}
+  .about-left,
+  .about-right {
+    flex-basis: 100%;
+  }
 
-.blockchain-content li::before {
-  content: "•";
-  color: #1a0af5;
-  position: absolute;
-  left: 0;
-}
+  .cards-container {
+    flex-direction: column;
+  }
 
-/* Responsive Design */
-@media (max-width: 800px) {
-    .about-content {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-    }
-
-    .about-left, .about-right {
-        flex-basis: 100%; /* Take full width */
-    }
-
-    .cards-container {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        gap: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
+  .why-grid,
+  .funfacts-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
-  .iot-section {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .application-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .iot-image, .iot-content {
-    flex: 1;
-  }
-
-  .detailed-img {
-    max-width: 100%;
-  }
-
-  .cyber-section {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cyber-image, .cyber-content {
-    flex: 1;
-  }
-
+  .iot-section,
+  .cyber-section,
   .blockchain-section {
     flex-direction: column;
+    padding: 20px;
     gap: 20px;
   }
 
   .blockchain-image {
-    order: -1; /* This will place the image above the content on mobile */
+    order: -1;
   }
 }
-

@@ -43,6 +43,20 @@ const events = [
     imageUrl: "ICSB/pics/cyber shield.jpeg",
     pdfUrl: "/ICSB/pdfs/Report .pdf", // Added PDF URL
   },
+    {
+    id: 7,
+    title: "BUILDING THE FUTHURE WITH BLOCKCHAIN:CRAFTING DECENTRALIZED SOLUTIONS",
+    date: "22-08-2025",
+    imageUrl: "ICSB/pics/BLOCKCHAIN.jpg",
+    pdfUrl: "", // Added PDF URL
+  },
+  {
+    id: 8,
+    title: "Unlocking Career Potential: Industry Insights for a Thriving Future",
+    date: "08-09-2025",
+    imageUrl: "ICSB/pics/TALK INTERACTIVE.jpg",
+    pdfUrl: "", // Added PDF URL
+  },
   
 ];
 

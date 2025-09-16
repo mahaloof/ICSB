@@ -1,186 +1,125 @@
 import React from 'react';
 import './About.css';
+import { FaWifi, FaLock, FaLink, FaRocket, FaUsers, FaGlobe, FaMicrochip } from "react-icons/fa";
+// Added icons for extra sections
 import about_img from '../../assets/about.png';
-import iot_img from '../../assets/iot.jpeg'; // Corrected path for IoT image
-import cyber_security_img from '../../assets/cybersecurity.jpeg'; // Corrected path for Cyber Security image
-import blockchain_img from '../../assets/blockchain.jpeg'; // Corrected path for Blockchain image
-import iot_detailed_img from '../../assets/iot.jpeg'; // Corrected path for IoT Detailed image
-import cyber_security_detailed_img from '../../assets/cybersecurity.jpeg'; // Corrected path for Cybersecurity Detailed image
+import iot_img from '../../assets/iot.jpeg';
+import cyber_security_img from '../../assets/cybersecurity.jpeg';
+import blockchain_img from '../../assets/blockchain.jpeg';
 
 const About = () => {
   return (
     <div className='about'>
+      {/* Intro Section */}
       <div className="about-content">
         <div className="about-left">
-          <img src={about_img} alt='' className='about-img' />
+          <img src={about_img} alt="About ICSB" className='about-img' />
         </div>
         <div className="about-right">
-          <h3>ICSB</h3>
-          <h2>Our Mission & Vision</h2>
-          <h3>DEPARTMENT VISION</h3>
+          <h2>About <span>ICSB</span></h2>
+          <p>
+            ICSB (IoT, Cyber Security & Blockchain) at P.A. College of Engineering is a center of excellence 
+            committed to building future-ready engineers through innovation, research, and industry exposure.
+          </p>
+
+          <h3>Our Vision</h3>
+          <p>
+            To be a global hub of excellence in IoT, Cyber Security, and Blockchain, 
+            producing ethical leaders who drive technological and societal progress.
+          </p>
+
+          <h3>Our Mission</h3>
           <ul>
-            <li>
-              <p>To be a leading centre of excellence in the field of Computer Science and Engineering, with
-                specialization in IoT, Cyber Security, and Blockchain Technology, dedicated to developing innovative,
-                ethically grounded professionals who can contribute to global technological advancement.</p>
-            </li>
-          </ul>
-          <h3>DEPARTMENT MISSION</h3>
-          <ul>
-            <li>
-              <p>To provide comprehensive education in Computer Science & Engineering with specialization in
-                IoT, Cyber Security, and Blockchain Technology, equipping students with the knowledge, skills,
-                and ethical foundation to excel in their careers.</p>
-            </li>
-            <li>
-              <p>To foster a collaborative and inclusive learning environment that encourages creativity, critical
-                thinking, and leadership through interdisciplinary research and partnerships with industry,
-                academia, and government.</p>
-            </li>
-            <li>
-              <p>To nurture entrepreneurial abilities and empower students to embrace evolving technologies,
-                contributing to technological progress and societal welfare, while ensuring competence across
-                various aspects of Computer Science and Engineering.</p>
-            </li>
+            <li>Deliver cutting-edge education with strong ethical foundations.</li>
+            <li>Encourage creativity, leadership, and collaboration through research and partnerships.</li>
+            <li>Empower students to innovate and embrace emerging technologies for real-world impact.</li>
           </ul>
         </div>
       </div>
-      {/* Add Cards Section */}
+
+      {/* Specializations Cards */}
       <div className="cards-container">
         <div className="card">
+          <FaWifi className="card-icon" />
           <img src={iot_img} alt="IoT" className="card-img" />
           <h3>IoT</h3>
-          <p>Explore the world of Internet of Things, connecting devices and enabling smarter solutions.</p>
+          <p>Connecting devices, data, and people to enable smarter living and industry automation.</p>
         </div>
         <div className="card">
+          <FaLock className="card-icon" />
           <img src={cyber_security_img} alt="Cyber Security" className="card-img" />
           <h3>Cyber Security</h3>
-          <p>Learn how to protect systems, networks, and data from cyber threats and vulnerabilities.</p>
+          <p>Safeguarding systems and data through ethical hacking, encryption, and secure design.</p>
         </div>
         <div className="card">
+          <FaLink className="card-icon" />
           <img src={blockchain_img} alt="Blockchain" className="card-img" />
           <h3>Blockchain</h3>
-          <p>Dive into the decentralized world of blockchain technology and its transformative potential.</p>
+          <p>Revolutionizing trust with decentralized, transparent, and secure digital ecosystems.</p>
         </div>
       </div>
-      
-      {/* New IoT Section */}
-      <div className="iot-section">
-        <div className="iot-image">
-          <img src={iot_detailed_img} alt="IoT Detailed" className="detailed-img" />
-        </div>
-        <div className="iot-content">
-          <h2>IoT (Internet of Things)</h2>
-          <div className="iot-definition">
-            <h3>What is IoT?</h3>
-            <p>IoT connects everyday physical objects to the internet, enabling them to collect, send, and receive data for smarter operations and automation.</p>
+
+      {/* Section 1: Why ICSB */}
+      <div className="why-icsb">
+        <h2>Why Choose ICSB?</h2>
+        <div className="why-grid">
+          <div className="why-card">
+            <FaRocket className="why-icon" />
+            <h3>Innovation Labs</h3>
+            <p>Hands-on projects and hackathons to build futuristic solutions.</p>
           </div>
-          <div className="iot-highlights">
-            <h3>Key Features</h3>
-            <ul>
-              <li>Smart device integration and automation</li>
-              <li>Real-time data collection and analysis</li>
-              <li>Cloud-based monitoring and control</li>
-              <li>Wireless connectivity (Wi-Fi, Bluetooth, etc.)</li>
-            </ul>
+          <div className="why-card">
+            <FaUsers className="why-icon" />
+            <h3>Career Boost</h3>
+            <p>Workshops, certifications, and real-world exposure to industry tools.</p>
           </div>
-          <div className="iot-applications">
-            <h3>Applications</h3>
-            <div className="application-grid">
-              <div>
-                <strong>Smart Homes</strong>
-                <p>Automated lighting, security, appliances</p>
-              </div>
-              <div>
-                <strong>Healthcare</strong>
-                <p>Patient monitoring, smart medical devices</p>
-              </div>
-              <div>
-                <strong>Industry</strong>
-                <p>Factory automation, predictive maintenance</p>
-              </div>
-            </div>
+          <div className="why-card">
+            <FaGlobe className="why-icon" />
+            <h3>Community Impact</h3>
+            <p>Projects that address real challenges and benefit society.</p>
           </div>
         </div>
       </div>
 
-      {/* New Cybersecurity Section */}
-      <div className="cyber-section">
-        <div className="cyber-image">
-          <img src={cyber_security_detailed_img} alt="Cybersecurity Detailed" className="detailed-img" />
-        </div>
-        <div className="cyber-content">
-          <h2>Cybersecurity</h2>
-          <div className="cyber-definition">
-            <h3>What is Cybersecurity?</h3>
-            <p>Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks, ensuring the confidentiality, integrity, and availability of data.</p>
+      {/* Section 4: Statistics */}
+      <div className="stats-section">
+        <h2>Our Impact in Numbers</h2>
+        <div className="stats-grid">
+          <div className="stat">
+            <h3>150+</h3>
+            <p>Students Enrolled</p>
           </div>
-          <div className="cyber-highlights">
-            <h3>Key Features</h3>
-            <ul>
-              <li>Network & System Security</li>
-              <li>Ethical Hacking & Penetration Testing</li>
-              <li>Cryptography & Data Protection</li>
-              <li>Security Operations & Incident Response</li>
-            </ul>
+          <div className="stat">
+            <h3>20+</h3>
+            <p>Industry Collaborations</p>
           </div>
-          <div className="cyber-applications">
-            <h3>Career Paths</h3>
-            <div className="application-grid">
-              <div>
-                <strong>Security Analyst</strong>
-                <p>Threat monitoring and defense</p>
-              </div>
-              <div>
-                <strong>Ethical Hacker</strong>
-                <p>Vulnerability assessment</p>
-              </div>
-              <div>
-                <strong>Security Engineer</strong>
-                <p>Infrastructure protection</p>
-              </div>
-            </div>
+          <div className="stat">
+            <h3>15+</h3>
+            <p>Workshops Organized</p>
+          </div>
+          <div className="stat">
+            <h3>10+</h3>
+            <p>Invited Session</p>
           </div>
         </div>
       </div>
 
-      {/* Blockchain Section */}
-      <div className="blockchain-section">
-        <div className="blockchain-content">
-          <h2>Blockchain Technology</h2>
-          <div className="blockchain-definition">
-            <h3>What is Blockchain?</h3>
-            <p>Blockchain is a decentralized digital ledger that stores information in a secure, transparent, and immutable way across a network of computers.</p>
+      {/* Section 6: Fun Facts / Did You Know */}
+      <div className="funfacts-section">
+        <h2>Did You Know?</h2>
+        <div className="funfacts-grid">
+          <div className="funfact">
+            <FaMicrochip className="funfact-icon" />
+            <p>By 2030, IoT devices will exceed <strong>30 billion</strong> worldwide 🌐</p>
           </div>
-          <div className="blockchain-highlights">
-            <h3>Key Features</h3>
-            <ul>
-              <li>Decentralized & Transparent Systems</li>
-              <li>Smart Contracts & DApps Development</li>
-              <li>Cryptographic Security</li>
-              <li>Distributed Consensus Mechanisms</li>
-            </ul>
+          <div className="funfact">
+            <FaLink className="funfact-icon" />
+            <p>The first blockchain was used in <strong>Bitcoin (2009)</strong> ⛓️</p>
           </div>
-          <div className="blockchain-applications">
-            <h3>Applications</h3>
-            <div className="application-grid">
-              <div>
-                <strong>Finance</strong>
-                <p>Digital currencies and DeFi</p>
-              </div>
-              <div>
-                <strong>Supply Chain</strong>
-                <p>Product tracking and verification</p>
-              </div>
-              <div>
-                <strong>Smart Contracts</strong>
-                <p>Automated agreement execution</p>
-              </div>
-            </div>
+          <div className="funfact">
+            <FaLock className="funfact-icon" />
+            <p>Cybercrime damages may reach <strong>$10 trillion</strong> by 2025 🔒</p>
           </div>
-        </div>
-        <div className="blockchain-image">
-          <img src={blockchain_img} alt="Blockchain Technology" className="detailed-img" />
         </div>
       </div>
     </div>

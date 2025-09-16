@@ -54,7 +54,7 @@ const onSubmit = async (event) => {
                 <label>Email</label>
                 <input type='MAIL' name='EMAIL' placeholder='ENTER YOUR EMAIL' 
                 required/>
-                <label>Write your Messages however</label>
+                <label>Write your Messages</label>
                 <textarea name='message' rows="6" placeholder='ENTER YOUR MESSAGE'
                 required></textarea>
                 <button type='submit' className='btn dark-btn'>SEND <img src={white_arrow} alt="" /></button>

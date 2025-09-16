@@ -40,9 +40,7 @@ const Messages = () => {
                   <span>Heaf of the Department</span>
                 </div>
               </div>
-              <p>In antiquity, a paragraph often was a single thought—and often a single sentence,
-         usually a very long one. 
-        Writers today, however, tend not to go on the way classical authors did. </p>
+              <p>“ICSB is more than a specialization – it is a movement towards shaping engineers who are innovators, problem-solvers, and ethical leaders of tomorrow.” </p>
             </div>
           </li>
           <li>
@@ -54,9 +52,7 @@ const Messages = () => {
                   <span>Faculty</span>
                 </div>
               </div>
-              <p>In antiquity, a paragraph often was a single thought—and often a single sentence,
-         usually a very long one. 
-        Writers today, however, tend not to go on the way classical authors did. 
+              <p>“We believe in empowering students with practical skills and research-driven learning to prepare them for global opportunities.”
        </p>
             </div>
           </li>
@@ -69,9 +65,7 @@ const Messages = () => {
                   <span>Faculty</span>
                 </div>
               </div>
-              <p>In antiquity, a paragraph often was a single thought—and often a single 
-                  sentence,usually a very long one. 
-                  Writers today, however, tend not to go on the way classical authors did. 
+              <p>“Our department stands for inclusivity, creativity, and excellence. Together, we build a community that thrives on innovation.”
                   </p>
             </div>
           </li>
@@ -84,9 +78,7 @@ const Messages = () => {
                   <span>Faculty</span>
                 </div>
               </div>
-              <p>In antiquity, a paragraph often was a single thought—and often a single sentence,
-         usually a very long one. 
-        Writers today, however, tend not to go on the way classical authors did. 
+              <p>At ICSB, we believe in learning by doing. Our goal is to create problem-solvers who can adapt, innovate, and lead in a fast-changing digital world.”
         </p>
             </div>
           </li>
