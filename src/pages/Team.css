@@ -23,6 +23,7 @@
 .team-section {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: center; /* Center cards horizontally */
   gap: 24px; /* Space between cards */
   margin-bottom: 32px;
@@ -37,6 +38,23 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 24px 16px;
   min-width: 200px;
+=======
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.team-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
 }
 
 .team-card h3 {
@@ -49,6 +67,7 @@
   margin: 0.5rem 0 0;
   color: #333;
 }
+<<<<<<< HEAD
 
 .team-photo {
   width: 150px;
@@ -58,3 +77,5 @@
   margin-bottom: 10px;
   border: 2px solid #eee;
 }
+=======
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854

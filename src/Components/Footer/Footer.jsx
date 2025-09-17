@@ -2,7 +2,11 @@ import React from 'react'
 import './Footer.css'
 import Logo from '../../assets/kamillogo.png'
 import facebook from '../../assets/facebook_icon.png'
+<<<<<<< HEAD
 import github from '../../assets/github.png'
+=======
+import x from '../../assets/twitter_icon.png'
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
 import instagram from '../../assets/instagram.png'
 import { Link } from 'react-scroll'
 
@@ -15,7 +19,11 @@ const Footer = () => {
               <p></p>
                 <div className="footer-social-icons">
                   <img src={facebook} alt="" />
+<<<<<<< HEAD
                   <img src={github} alt="" />
+=======
+                  <img src={x} alt="" />
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
                   <img src={instagram}alt="" />
                 </div>
           </div>
@@ -38,13 +46,21 @@ const Footer = () => {
             <h2>CONTACT US</h2>
             <ul>
               <li>123456789</li>
+<<<<<<< HEAD
               <li>cseicsb@pace.edu.in</li>
+=======
+              <li>cseics@pace.edu.in</li>
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
             </ul>
           </div>
         </div>
         <hr/>
         <p className="footer-copyright">
+<<<<<<< HEAD
             Copyright 2025 @ CSE(ICSB) -All Rights Reserved
+=======
+            Copyright 2024 @ CSE(ICSB) -All Rights Reserved
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
         </p>
     </div>
   )

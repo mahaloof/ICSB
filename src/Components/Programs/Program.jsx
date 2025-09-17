@@ -14,7 +14,11 @@ const Program = () => {
             <img src={Program_1} alt=""/>
             <div className="caption">
                 <img src={Program_icon_1} alt=''/>
+<<<<<<< HEAD
                 <Link to="https://icsb-magazine-2024-25.onrender.com/"><p>MAGAZINE</p></Link>
+=======
+                <Link to="/event"><p>EVENTS</p></Link>
+>>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
             </div>
         </div>
         <div className='program'>
