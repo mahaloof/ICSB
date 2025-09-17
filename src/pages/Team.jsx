@@ -1,6 +1,5 @@
 import React from "react";
 import "./Team.css";
-<<<<<<< HEAD
 import hodImg from '../assets/hod.jpeg';
 import thofaImg from '../assets/thofa.jpeg';
 import meghaImg from '../assets/megha.jpeg';
@@ -12,74 +11,44 @@ import hanaImg from '../assets/hana.jpeg';
 import sahilImg from '../assets/sahil.jpeg';
 import afeefamamImg from '../assets/afeefamam.jpeg';
 
-// Example images (replace with actual URLs or import local images)
+// Faculty team with photos
 const facultyTeam = [
   { role: 'Head of the Department', name: 'Dr.Shamna N.V', photo: hodImg },
   { role: 'Assistant Professor', name: 'Prof.Afeefa Nazneen N.Z', photo: afeefamamImg },
-  
-  { role: 'Assistant Professor', name: 'Prof.thofa Aysha', photo: thofaImg },
+  { role: 'Assistant Professor', name: 'Prof.Thofa Aysha', photo: thofaImg },
   { role: 'Assistant Professor', name: 'Ms.Meghashree', photo: meghaImg },
-=======
-
-const facultyTeam = [
-  { role: 'Head of the Department', name: 'Dr.Shamna N.V' },
-  { role: 'Assistant Professor', name: 'Prof.afeefa Nazreen N.Z' },
-  { role: 'Assistant Professor', name: 'Prof.thofa Aysha' },
-  { role: 'Assistant Professor', name: 'Ms.Meghashree' },
-  { role: 'Assistant Professor', name: 'Prof.Saeedah' },
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
   // Add more faculty as needed
 ];
 
+// Core team with photos (add photo if available)
 const coreTeam = [
-<<<<<<< HEAD
-  { role: 'President', name: 'amna fathima', photo: amnaImg },
-
-=======
-  { role: 'President', name: 'Muhammed Haashid' },
-  { role: 'Vice President', name: 'Muhammed Zayan Sameer' },
-  { role: 'Secretary', name: 'Vineeth SN' },
-  { role: 'Joint Secretary', name: 'Afnan Fathima & Nawaz Rifan' },
-  { role: 'Treasurer', name: 'Manas Ahmed' },
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+  { role: 'President', name: 'Amna Fathima', photo: amnaImg },
+  { role: 'Secretary', name: 'Vineeth SN', photo: vineethImg },
+  { role: 'Vice President', name: 'Muhammed Haashid', photo: hashidImg },
+  // Add more core team members as needed
 ];
 
+// Sub teams with photos
 const subTeams = [
   {
     team: 'Technical Team',
     members: [
-<<<<<<< HEAD
-      { role: 'Coordinator',name: 'Vineeth SN', photo:  vineethImg },
-      { role: 'Coordinator', name: 'hashid', photo: hashidImg },
-     
-=======
-      { role: 'Lead', name: 'Zuhain Ibrahim' },
-      { role: 'Co-Leads', name: 'Mahaloof & Amna Fathima' },
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+      { role: 'Coordinator', name: 'Vineeth SN', photo: vineethImg },
+      { role: 'Coordinator', name: 'Muhammed Haashid', photo: hashidImg },
     ],
   },
   {
     team: 'Event Team',
     members: [
-<<<<<<< HEAD
       { role: 'Coordinator', name: 'Sahil', photo: sahilImg },
-      { role: 'Coordinator', name: 'Hana fathima', photo: hanaImg },
-=======
-      { role: 'Lead', name: 'Saahil' },
-      { role: 'Co-Leads', name: 'Afthab & Muhammed KP' },
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+      { role: 'Coordinator', name: 'Hana Fathima', photo: hanaImg },
     ],
   },
   {
     team: 'Media Team',
     members: [
-<<<<<<< HEAD
-      { role: 'Coordinator', name: 'Afnan fathima', photo: afnaImg },
-      
-=======
-      { role: 'Lead', name: 'Ameen' },
-      { role: 'Co-Lead', name: 'Hafiz Anwar' },
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+      { role: 'Coordinator', name: 'Afnan Fathima', photo: afnaImg },
+      // Add more media team members as needed
     ],
   },
 ];
@@ -94,10 +63,7 @@ const Team = () => {
       <div className="team-section">
         {facultyTeam.map((member, index) => (
           <div key={index} className="team-card">
-<<<<<<< HEAD
             <img src={member.photo} alt={member.name} className="team-photo" />
-=======
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
             <h3>{member.role}</h3>
             <p>{member.name}</p>
           </div>
@@ -109,10 +75,9 @@ const Team = () => {
       <div className="team-section">
         {coreTeam.map((member, index) => (
           <div key={index} className="team-card">
-<<<<<<< HEAD
-            <img src={member.photo} alt={member.name} className="team-photo" />
-=======
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+            {member.photo && (
+              <img src={member.photo} alt={member.name} className="team-photo" />
+            )}
             <h3>{member.role}</h3>
             <p>{member.name}</p>
           </div>
@@ -126,10 +91,9 @@ const Team = () => {
           <div className="team-section">
             {team.members.map((member, i) => (
               <div key={i} className="team-card">
-<<<<<<< HEAD
-                <img src={member.photo} alt={member.name} className="team-photo" />
-=======
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
+                {member.photo && (
+                  <img src={member.photo} alt={member.name} className="team-photo" />
+                )}
                 <h3>{member.role}</h3>
                 <p>{member.name}</p>
               </div>

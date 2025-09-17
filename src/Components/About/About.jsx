@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 import { FaWifi, FaLock, FaLink, FaRocket, FaUsers, FaGlobe, FaMicrochip } from "react-icons/fa";
-// Added icons for extra sections
 import about_img from '../../assets/about.png';
 import iot_img from '../../assets/iot.jpeg';
 import cyber_security_img from '../../assets/cybersecurity.jpeg';
@@ -81,9 +80,6 @@ const About = () => {
         </div>
       </div>
 
-<<<<<<< HEAD
-      
-=======
       {/* Section 4: Statistics */}
       <div className="stats-section">
         <h2>Our Impact in Numbers</h2>
@@ -106,7 +102,6 @@ const About = () => {
           </div>
         </div>
       </div>
->>>>>>> 978d4c212507bb436ad7fb6ed0a7f6b644a55854
 
       {/* Section 6: Fun Facts / Did You Know */}
       <div className="funfacts-section">
