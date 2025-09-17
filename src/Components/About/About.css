@@ -1,0 +1,278 @@
+/* ==========================
+   Base About Section
+========================== */
+.about {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ==========================
+   Content Layout
+========================== */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+.about-left {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-right {
+  flex-basis: 56%;
+}
+
+/* ==========================
+   Image Styling
+========================== */
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================
+   Headings
+========================== */
+.about-right h2,
+.why-icsb h2,
+.stats-section h2,
+.funfacts-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1a0af5, #00c4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.about-right h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin: 18px 0 10px;
+  border-left: 4px solid #1a0af5;
+  padding-left: 10px;
+}
+
+/* ==========================
+   Cards Section (Specializations)
+========================== */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #1a0af5;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* ==========================
+   Why ICSB Section
+========================== */
+.why-icsb {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8faff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.why-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  flex: 1;
+  min-width: 240px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card h3 {
+  margin-top: 15px;
+  color: #1a0af5;
+  font-size: 20px;
+}
+
+.why-icon {
+  font-size: 40px;
+  color: #00c4ff;
+}
+
+/* ==========================
+   Statistics Section
+========================== */
+.stats-section {
+  padding: 50px 20px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a0af5;
+}
+
+.stat p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ==========================
+   Fun Facts Section
+========================== */
+.funfacts-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e8f0ff, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.funfacts-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.funfact {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.funfact:hover {
+  transform: scale(1.05);
+}
+
+.funfact-icon {
+  font-size: 36px;
+  color: #1a0af5;
+  margin-bottom: 10px;
+}
+
+.funfact p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left,
+  .about-right {
+    flex-basis: 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .why-grid,
+  .funfacts-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .iot-section,
+  .cyber-section,
+  .blockchain-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .blockchain-image {
+    order: -1;
+  }
+}

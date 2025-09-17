@@ -1,0 +1,67 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    align-items: center;
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Adds spacing between items */
+}
+
+.program {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with spacing */
+    max-width: calc(33.33% - 20px);
+    position: relative;
+}
+
+/* Ensure images fit properly */
+.program img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Caption overlay */
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.program:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+}
+
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 1024px) {
+    .program {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .program {
+        flex: 1 1 100%; /* One item per row on mobile */
+        max-width: 90%; /* Slight padding */
+    }
+}
