@@ -80,29 +80,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section 4: Statistics */}
-      <div className="stats-section">
-        <h2>Our Impact in Numbers</h2>
-        <div className="stats-grid">
-          <div className="stat">
-            <h3>150+</h3>
-            <p>Students Enrolled</p>
-          </div>
-          <div className="stat">
-            <h3>20+</h3>
-            <p>Industry Collaborations</p>
-          </div>
-          <div className="stat">
-            <h3>15+</h3>
-            <p>Workshops Organized</p>
-          </div>
-          <div className="stat">
-            <h3>10+</h3>
-            <p>Invited Session</p>
-          </div>
-        </div>
-      </div>
-
       {/* Section 6: Fun Facts / Did You Know */}
       <div className="funfacts-section">
         <h2>Did You Know?</h2>

@@ -7,7 +7,7 @@ const Home = () => {
     <div className='hero Container' id='Home'>
       <div className="home-text">
         <h1>P.A COLLEGE OF ENGINEERING</h1>
-        <center><h2>CSE (ICSB)</h2></center>
+        <center><h1>CSE (ICSB)</h1></center>
         <p>IOT | CYBER SECURITY | BLOCKCHAIN</p>
         <i>Innovating for a Smarter, Safer, Connected Future.</i>
         {/* <a href='https://www.pace.edu.in/' target='_blank' rel="noopener noreferrer">

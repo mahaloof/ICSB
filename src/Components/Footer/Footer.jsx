@@ -37,8 +37,8 @@ const Footer = () => {
           <div className="footer-content-right">
             <h2>CONTACT US</h2>
             <ul>
-              <li>123456789</li>
-              <li>cseicsb@pace.edu.in</li>
+              
+              <li>icsb@pace.edu.in</li>
             </ul>
           </div>
         </div>
